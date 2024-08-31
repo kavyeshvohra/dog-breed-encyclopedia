@@ -16,7 +16,7 @@ To get started with the Dog Breeds Encyclopedia, follow these steps:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/kavyeshvohra/dog-breeds-encyclopedia.git
+   git clone https://github.com/kavyeshvohra/dog-breed-encyclopedia.git
    ```
 
 2. **Navigate to the Project Directory**:
