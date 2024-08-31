@@ -21,7 +21,7 @@ To get started with the Dog Breeds Encyclopedia, follow these steps:
 
 2. **Navigate to the Project Directory**:
    ```bash
-   cd dog-breeds-encyclopedia
+   cd dog-breed-encyclopedia
    ```
 
 3. **Install Dependencies**:
@@ -71,7 +71,7 @@ If you would like to contribute to this project, please follow these guidelines:
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License.
 
 ## Author
 
