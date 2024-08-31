@@ -1,0 +1,32 @@
+<div class="container my-4">
+    <!-- Search and Sort Controls -->
+    <div class="mb-3">
+      <input type="text" [(ngModel)]="searchTerm" (input)="filterBreeds()" class="form-control" placeholder="Search breeds">
+      <div class="mt-2">
+        <button class="btn btn-primary me-2" (click)="sortBreeds('asc')">Sort A-Z</button>
+        <button class="btn btn-primary" (click)="sortBreeds('desc')">Sort Z-A</button>
+      </div>
+    </div>
+  
+    <!-- Breed Cards -->
+  <div class="row">
+    <!-- Display a message if there are no breeds to show -->
+    <div *ngIf="filteredBreeds.length === 0" class="col-12 text-center">
+      <div class="alert alert-danger">
+        No breeds found
+      </div>
+    </div>
+
+    <!-- Breed Cards -->
+    <div class="row">
+      <div class="col-md-4 mb-4" *ngFor="let breed of filteredBreeds">
+        <div class="card">
+          <img *ngIf="dogImages[breed]" [src]="dogImages[breed]" class="card-img-top" alt="{{ breed }}">
+          <div class="card-body">
+            <h5 class="card-title text-center">{{ breed }}</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
